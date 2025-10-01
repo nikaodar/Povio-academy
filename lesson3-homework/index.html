@@ -1,33 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <title>Frontend Mentor | Blog preview card</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="reset.css">
-  <title>Frontend Mentor | Blog preview card</title>
-</head>
-
-<body>
-  <main>
-    <div class="card">
-      <section>
-        <img class="pic" src="assets/images/illustration-article.svg" alt="Blog picture">
-      </section>
-      <section>
-        <p class="category">Learning</p>
-        <p class="date"> Published 21 Dec 2023</p>
-        <h1 class="heading">HTML & CSS foundations</h1>
-        <p class="description">These languages are the backbone of every website, defining structure, content, and
-          presentation.</p>
-      </section>
-      <section class="profile">
-        <img class="profile-picture" src="assets/images/image-avatar.webp" alt="Author profile picture">
-        <p class="author-text">Greg Hooper</p>
-      </section>
-    </div>
-  </main>
-</body>
-
+  <body>
+    <main>
+      <div class="card">
+        <section>
+          <img
+            class="pic"
+            src="assets/images/illustration-article.svg"
+            alt="Blog picture" />
+        </section>
+        <section>
+          <p class="category">Learning</p>
+          <p class="date">Published 21 Dec 2023</p>
+          <a href="" class="heading" aria-label="Open post">
+            <h1>HTML & CSS foundations</h1>
+          </a>
+          <p class="description">
+            These languages are the backbone of every website, defining
+            structure, content, and presentation.
+          </p>
+        </section>
+        <section class="profile">
+          <img
+            class="profile-picture"
+            src="assets/images/image-avatar.webp"
+            alt="Author profile picture" />
+          <p class="author-text">Greg Hooper</p>
+        </section>
+      </div>
+    </main>
+  </body>
 </html>
