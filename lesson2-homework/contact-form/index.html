@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+</head>
+
+<body>
+    <main>
+        <h1>Contact form</h1>
+        <section>
+            <form>
+                <fieldset>
+                    <legend>Your Name</legend>
+                    <input type="text" id="firstName" name="firstName" placeholder="First Name">
+                    <input type="text" id="lastName" name="lastName" placeholder="Last Name">
+                </fieldset>
+
+                <label>
+                    Your Email
+                    <input type="text" id="email" name="email" placeholder="e.g. hello@contact.net">
+                </label>
+
+                <fieldset>
+                    <legend>Phone*</legend>
+                    <input type="text" id="phone1" name="phone1" placeholder="###" required>
+                    <input type="text" id="phone2" name="phone2" placeholder="###" required>
+                    <input type="text" id="phone3" name="phone3" placeholder="###" required>
+                </fieldset>
+
+                <label>
+                    Message Subject*
+                    <select id="subject" name="subject" required>
+                        <option value="question">Question</option>
+                        <option value="techSupport">Tech Support</option>
+                        <option value="other">Other</option>
+                    </select>
+                </label>
+
+                <label>
+                    Message*
+                    <textarea id="message" name="message" rows="5" cols="100" required></textarea>
+                </label>
+
+                <label>
+                    Verification*
+                    <input type="checkbox" id="check" name="check" required>
+                    I'm not a robot
+                </label>
+                <button type="submit">SUBMIT FORM</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
