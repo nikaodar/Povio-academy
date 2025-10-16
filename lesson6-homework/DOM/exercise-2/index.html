@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image toggle</title>
+    <style>
+      .picture {
+        opacity: 1;
+        visibility: visible;
+        transition: opacity 0.5s;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="toggle-btn" aria-label="click to toggle picture">
+      Click me
+    </button>
+    <img
+      class="picture"
+      src="assets/Untitled-design-35-1080x675.png"
+      alt="example cat picture"
+    />
+    <script src="app.js"></script>
+  </body>
+</html>
