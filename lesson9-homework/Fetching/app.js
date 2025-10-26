@@ -20,8 +20,12 @@ async function getQuote() {
     const quote = await response.json();
     const data = quote.data;
 
-    quoteElement.textContent = `“${data.content}”`;
-    authorElement.textContent = `— ${data.character.name}, ${data.anime.name}`;
+    const quoteBody = data.content;
+    const author = data.character.name;
+    const anime = data.anime.name;
+
+    quoteElement.textContent = `“${quoteBody}”`;
+    authorElement.textContent = `— ${author}, ${anime}`;
 
     loadingElement.classList.add("hidden");
     quoteContainer.classList.remove("hidden");
